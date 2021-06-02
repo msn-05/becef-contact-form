@@ -10,3 +10,18 @@ body {
   background-size: 40%;
   background-position: center 100px;
 }
+.row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  margin-left: 5%;
+  margin-top: 10px;
+  flex: 35%;
+}
+@media screen and (max-width: 800px){
+  .col {
+    flex: 100%;
+  }
+}
