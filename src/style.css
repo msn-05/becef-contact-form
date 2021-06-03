@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   min-height: 100%;
@@ -11,7 +12,7 @@ body {
   background-position: center 100px;
 }
 .row {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -20,8 +21,64 @@ body {
   margin-top: 10px;
   flex: 35%;
 }
+.inp {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  background: transparent;
+  transition: border-bottom-color 500ms;
+  padding: 5px;
+  margin-top: 10px;
+}
+.inp:focus {
+  outline: none;
+  border-bottom-color: black;
+}
+.msg {
+  display: block;
+  width: 100%;
+}
+.social {
+  flex: 30%;
+  display: block;
+}
+.fa {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 @media screen and (max-width: 800px){
   .col {
     flex: 100%;
+  }
+  .inp {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .msg {
+    width: 95%;
+  }
+  .social {
+    margin-top: 30px;
+    flex: 100%;
+  }
+  body {
+    background-size: 70%;
   }
 }
