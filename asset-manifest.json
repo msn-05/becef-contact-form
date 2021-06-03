@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/becef-contact-form/static/css/main.01999da0.chunk.css",
+    "main.js": "/becef-contact-form/static/js/main.7e04ff19.chunk.js",
+    "main.js.map": "/becef-contact-form/static/js/main.7e04ff19.chunk.js.map",
+    "runtime-main.js": "/becef-contact-form/static/js/runtime-main.fb9dd907.js",
+    "runtime-main.js.map": "/becef-contact-form/static/js/runtime-main.fb9dd907.js.map",
+    "static/js/2.2350909c.chunk.js": "/becef-contact-form/static/js/2.2350909c.chunk.js",
+    "static/js/2.2350909c.chunk.js.map": "/becef-contact-form/static/js/2.2350909c.chunk.js.map",
+    "index.html": "/becef-contact-form/index.html",
+    "static/css/main.01999da0.chunk.css.map": "/becef-contact-form/static/css/main.01999da0.chunk.css.map",
+    "static/js/2.2350909c.chunk.js.LICENSE.txt": "/becef-contact-form/static/js/2.2350909c.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/becef-contact-form/static/media/bg.8de1386b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb9dd907.js",
+    "static/js/2.2350909c.chunk.js",
+    "static/css/main.01999da0.chunk.css",
+    "static/js/main.7e04ff19.chunk.js"
+  ]
+}
