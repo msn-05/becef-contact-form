@@ -11,31 +11,27 @@ body {
   background-size: 40%;
   background-position: center 100px;
 }
+.main {
+  width: 90%;
+  margin: auto;
+}
 .row {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
-.col {
-  margin-left: 5%;
-  margin-top: 10px;
-  flex: 35%;
-}
 .inp {
   width: 90%;
-  border: none;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border: 2px solid rgba(0,0,0,0.2);
   background: transparent;
   transition: border-bottom-color 500ms;
-  padding: 5px;
-  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
 }
 .inp:focus {
   outline: none;
-  border-bottom-color: black;
+  border-color: black;
 }
 .msg {
-  display: block;
   width: 100%;
 }
 .social {
@@ -68,17 +64,26 @@ body {
     flex: 100%;
   }
   .inp {
-    width: 90%;
-    margin-top: 10px;
+    width: 100%;
   }
-  .msg {
-    width: 95%;
+  .inp2 {
+    margin-top: 30px;
   }
   .social {
-    margin-top: 30px;
     flex: 100%;
+    margin-top: 40px;
   }
   body {
     background-size: 70%;
+  }
+}
+@media screen and (min-width: 800px){
+  .col {
+    flex: 45%;
+    position: relative;
+  }
+  .inp2 {
+    position: absolute;
+    right: 0;
   }
 }

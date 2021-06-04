@@ -3,19 +3,31 @@ import "./style.css";
 
 export default function App() {
   return (
-    <div>
+    <div className='main'>
       <Title />
+      <br />
+      <br />
+      <br />
       <Row>
         <Input id='fname' name='fname' label='First name' type='text' />
-        <Input id='lname' name='lname' label='Last name' type='text' />
+        <Input inp2={true} id='lname' name='lname' label='Last name' type='text' />
       </Row>
+      <br />
+      <br />
       <Row>
         <Input id='email' name='email' label='E-mail' type='email' />
-        <Input id='subject' name='subject' label='Subject' type='text' />
+        <Input inp2={true} id='subject' name='subject' label='Subject' type='text' />
       </Row>
+      <br />
+      <br />
       <Message id='msg' name='msg' label='Message' />
       <br />
-      <div className='row' style={{width:'90%',margin:'auto',justifyContent:'flex-start'}}>
+      <br />
+      <Submit />
+      <br />
+      <br />
+      <br />
+      <div className='row' style={{justifyContent:'space-between'}}>
         <div className='social'>
           <h2>OR HERE</h2><br />
           <h3>Email:</h3><br />
@@ -25,7 +37,7 @@ export default function App() {
         </div>
         <div className='social'>
           <h2>Get Social</h2>
-          <a href='#' className='fa fa-twitter'></a>
+          <a href='#' className='fa fa-twitter' style={{marginLeft:'0'}}></a>
           <a href='#' className='fa fa-instagram'></a>
           <a href='#' className='fa fa-linkedin'></a>
         </div>
@@ -40,7 +52,7 @@ function Title(){
   const style = {
     'text-transform': 'uppercase',
     'text-align': 'center',
-    'margin-top': '40px',
+    'margin-top': '50px',
     'font-weight': 'bolder'
   };
   return (
@@ -57,20 +69,28 @@ function Row(props){
 function Input(props){
   return (
     <div className='col'>
-      <label for={props.id}>{props.label.toUpperCase()}:</label>
-      <input className='inp' type={props.type} id={props.id} name={props.name} />
+      <input className={props.inp2?'inp inp2':'inp'} type={props.type} id={props.id} name={props.name} placeholder={props.label.toUpperCase()} />
     </div>
   );
 }
 function Message(props){
+  return (
+    <div>
+      <textarea className='inp msg' id={props.id} name={props.name} placeholder={props.label.toUpperCase()} rows='4' />
+    </div>
+  );
+}
+function Submit(){
   const style = {
-    'margin': '40px auto',
-    'width': '90%'
+    display: 'block',
+    margin: 'auto',
+    color: 'white',
+    backgroundColor: 'darkblue',
+    border: 'none',
+    borderRadius: '10%',
+    padding: '10px'
   };
   return (
-    <div style={style}>
-      <label for={props.id}>{props.label.toUpperCase()}:</label>
-      <textarea className='inp msg' id={props.id} name={props.name} rows='3' />
-    </div>
+    <button style={style} type='submit'>Submit</button>
   );
 }
